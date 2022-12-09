@@ -21,8 +21,8 @@ spec:
         - name: PORT
           value: "80"
         - name: MONGO_DB_CONNECTION_STRING
-          value: mongodb://mongodb:27017
+          value: mongodb+srv://fuad0019:Naruto_939393@cluster0.mkntsgl.mongodb.net/?retryWrites=true&w=majority
         - name: MONGO_DB_NAME
-          value: sdu-evac
+          value: Cluster0
         - name: REDIS_URI
-          value: redis://redis-master
+          value: rediss://default:AVNS_vQHZu6O6dFuGdMILkFM@redis-2859ee15-student-6d98.aivencloud.com:23177
