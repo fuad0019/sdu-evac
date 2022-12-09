@@ -1,0 +1,1 @@
+{"version":3,"file":"DeserializationError.js","sourceRoot":"","sources":["../../src/Errors/DeserializationError.ts"],"names":[],"mappings":";;AAAA,MAAqB,oBAAqB,SAAQ,KAAK;IACnD,YAAY,GAAW;QACnB,KAAK,CAAC,GAAG,CAAC,CAAC;QACX,MAAM,CAAC,cAAc,CAAC,IAAI,EAAE,oBAAoB,CAAC,SAAS,CAAC,CAAC;IAChE,CAAC;CACJ;AALD,uCAKC"}
