@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "80"
         - name: MONGO_DB_CONNECTION_STRING
-          value: mongodb+srv://fuad0019:Naruto_939393@cluster0.mkntsgl.mongodb.net/?retryWrites=true&w=majority
+          value: mongodb+srv://fuad0019:Naruto_939393@cluster0.kbsgxe0.mongodb.net/?retryWrites=true&w=majority
         - name: MONGO_DB_NAME
           value: Cluster0
         - name: REDIS_URI
