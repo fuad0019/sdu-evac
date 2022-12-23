@@ -7,9 +7,9 @@ metadata:
 spec:
   ports:
   - name: 80-80
-    port: 443
+    port: 80
     protocol: TCP
     targetPort: 80
   selector:
     app: sdu-evac-backend
-  type: LoadBalancer
+  type: NodePort
