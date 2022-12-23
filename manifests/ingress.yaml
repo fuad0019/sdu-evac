@@ -6,6 +6,10 @@ metadata:
     kubernetes.io/ingress.class: "gce"
     kubernetes.io/ingress.global-static-ip-name: "ingress-webapps"
 spec:
+  tls:
+  - hosts:
+    - 34.102.237.170
+    secretName: evacuation-ingress-tls
   defaultBackend:
     service:
       name: sdu-evac-backend
