@@ -28,3 +28,12 @@ spec:
           value: rediss://default:AVNS_vQHZu6O6dFuGdMILkFM@redis-2859ee15-student-6d98.aivencloud.com:23177
         - name: NODE_ENV
           value: development
+        livenessProbe:
+            httpGet:
+                path: /health
+                port: 80
+        readinessProbe:
+            httpGet:
+                path: /health
+                port: 80
+
