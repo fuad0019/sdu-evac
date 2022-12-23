@@ -12,7 +12,6 @@ O = MyCompany
 OU = MyDivision
 CN = 34.102.237.170
 [v3_req]
-keyUsage = keyEncipherment, dataEncipherment
 extendedKeyUsage = serverAuth
 subjectAltName = @alt_names
 [alt_names]
