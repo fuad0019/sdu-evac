@@ -1,5 +1,5 @@
 const constansts = {
-    serverBaseURL: 'http://34.135.215.209:80'
+    serverBaseURL: 'https://34.102.237.170:443'
 }
 
 export default constansts;
