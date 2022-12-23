@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sdu-evac-proxy
+  name: sdu-evac-proxy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sdu-evac-proxy
+  template:
+    metadata:
+      labels:
+        app: sdu-evac-proxy
+    spec:
+      containers:
+      - image: fujam20/proxy:latest
+        name: sdu-evac-proxy
