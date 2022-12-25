@@ -15,7 +15,7 @@ spec:
         app: sdu-evac-backend
     spec:
       containers:
-      - image: fujam20/sdu-evac-backend:latest
+      - image: europe-west2-docker.pkg.dev/pc-api-5447029944521831582-389/evacuation/backend:latest
         name: sdu-evac-backend
         env:
         - name: PORT
