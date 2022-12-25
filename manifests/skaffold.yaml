@@ -1,6 +1,12 @@
 apiVersion: skaffold/v2beta16
 kind: Config
+build:
+  artifacts:
+    - image: backend
+      context: ../Backend
+  googleCloudBuild:
+    projectId: pc-api-5447029944521831582-389
 deploy:
   kubectl:
     manifests:
-      - k8s-*
+      - ../Backend/kubernetes/backend-dep.yaml
