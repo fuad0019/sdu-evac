@@ -32,3 +32,11 @@ spec:
           ports:
             - containerPort: 6379
               name: redis
+          volumeMounts:
+            - name: redis-volume
+              mountPath: /data
+      volumes:
+        - name: redis-volume
+          gcePersistentDisk:
+            pdName: redis-disk
+            fsType: ext4
