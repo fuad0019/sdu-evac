@@ -19,7 +19,7 @@ spec:
     matchLabels:
       app: redis  # has to match .spec.template.metadata.labels
   serviceName: redis
-  replicas: 1
+  replicas: 3
   template:
     metadata:
       labels:
