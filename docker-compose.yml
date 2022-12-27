@@ -14,7 +14,7 @@ services:
       - PORT=3000
       - NODE_ENV=development
       # - MONGO_DB_CONNECTION_STRING=mongodb+srv://fuad0019:Naruto_939393@cluster0.kbsgxe0.mongodb.net/?retryWrites=true&w=majority
-      - MONGO_DB_CONNECTION_STRING=mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017
+      - MONGO_DB_CONNECTION_STRING=mongodb+srv://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017
       - MONGO_DB_NAME=Cluster0
       - REDIS_URI=rediss://default:AVNS_vQHZu6O6dFuGdMILkFM@redis-2859ee15-student-6d98.aivencloud.com:23177
       
