@@ -27,7 +27,7 @@ steps:
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
     - run
-    - --filename=./Backend/kubernetes/backend-dep.yaml
+    - --filename=Backend/kubernetes/backend-dep.yaml
     - --image=europe-west2-docker.pkg.dev/pc-api-5447029944521831582-389/evacuation/backend:latest
     - --location=${_CLOUDSDK_COMPUTE_ZONE}
     - --cluster=${_CLOUDSDK_CONTAINER_CLUSTER}
