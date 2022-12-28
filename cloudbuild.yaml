@@ -10,24 +10,12 @@ steps:
     args: ['push', 
            'europe-west2-docker.pkg.dev/pc-api-5447029944521831582-389/evacuation/backend']
 
+  # Entrypoint, timeout and environment variables
 # deploy container image to GKE
-
-- name: 'gcr.io/cloud-builders/gke-deploy'
-  id: 'Prepare deploy'
-  args:
-  - 'prepare'
-  - '--filename=$_K8S_YAML_PATH'
-  - '--image=$_IMAGE_NAME:$_IMAGE_VERSION'
-  - '--app=$_K8S_APP_NAME'
-  - '--version=$_IMAGE_VERSION'
-  - '--namespace=$_K8S_NAMESPACE'
-  - '--output=output'
-  - '--annotation=gcb-build-id=$BUILD_ID'
-
   - name: "gcr.io/cloud-builders/gke-deploy"
     args:
     - run
     - --filename=Backend/kubernetes/backend-dep.yaml
     - --image=europe-west2-docker.pkg.dev/pc-api-5447029944521831582-389/evacuation/backend:latest
     - --location=${_CLOUDSDK_COMPUTE_ZONE}
-    - --cluster=${_CLOUDSDK_CONTAINER_CLUSTER}
+    - --cluster=${_CLOUDSDK_CONTAINER_CLUSTE
