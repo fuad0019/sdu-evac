@@ -9,4 +9,4 @@ build:
 deploy:
   kubectl:
     manifests:
-      - ../Backend/kubernetes/backend-dep.yaml
+      - ../Backend/kubernetes/backend-dep*
