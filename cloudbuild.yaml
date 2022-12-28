@@ -1,0 +1,14 @@
+steps:
+  # Docker Build
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 
+           'europe-west2-docker.pkg.dev/pc-api-5447029944521831582-389/evacuation/backend', 
+           '.']
+
+  # Docker Push
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 
+           'europe-west2-docker.pkg.dev/pc-api-5447029944521831582-389/evacuation/backend']
+
+  # Entrypoint, timeout and environment variables
+# deploy container image to GKE
