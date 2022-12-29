@@ -37,7 +37,7 @@ spec:
                 path: /health
                 port: 80
         resources:
-          # You must specify requests for CPU to autoscale
+          # You must specify requests for CPU to autoscale #change
           # based on CPU utilization
           requests:
             cpu: "20m"
